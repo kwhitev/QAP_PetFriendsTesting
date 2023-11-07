@@ -135,7 +135,7 @@ def test_successful_delete_self_pet_with_photo():
     assert pet_id not in my_pets.values()
 
 def test_successful_update_self_pet_info(name='Дэг', animal_type='Крутой бобер', age=3):
-    """Проверяем возможность обновления информации о питомце без фото"""
+    """Проверяем возможность обновления информации о питомце"""
 
     # Получаем ключ auth_key и список своих питомцев
     _, auth_key = pf.get_api_key(valid_email, valid_password)
